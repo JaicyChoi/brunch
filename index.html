@@ -140,10 +140,10 @@
                 <p class="group4_title">Traditional cuisine made easy</p>
                 <p class="group4_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
                 <ul class="group4_list">
-                    <li>Meals</li>
-                    <li>Spices</li>
-                    <li>Book</li>
-                    <li>Gallery</li>
+                    <li><a href="#">Meals</a></li>
+                    <li><a href="#">Spices</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Gallery</a></li>
                 </ul>
             </div>
         </section>
@@ -188,7 +188,6 @@
         </section>
         <section class="group6">
             <h2 class="hidden">section 6</h2>
-            <img src="images/contents_bg3.png" alt="contents background image">
         </section>
         <section class="group7">
             <h2 class="hidden">section 7</h2>
@@ -207,17 +206,16 @@
                         </li>
                         <li>
                             <p class="book_list_title">Name</p>
-                            <select class="select_box">
-                                <option selected>Full name</option>
-                                <option>Family name</option>
-                                <option>First name</option>
-                            </select>
+                            <input type="text" placeholder="Your name" class="name">
                         </li>
                     </ul>
                     <ul class="book_list">
                         <li>
                             <p class="book_list_title">When isyour date?</p>
-                            <div class="calender"></div>
+                            <!-- <div class="calender"></div> -->
+                            <form action="#" method="post">
+                                <input type="date" placeholder="yyyy-mm-dd" class="calender">
+                            </form>
                         </li>
                         <li>
                             <p class="book_list_title">Email</p>
@@ -227,11 +225,12 @@
                     <ul class="book_list">
                         <li>
                             <p class="book_list_title">Time</p>
-                            <select class="select_box clock">
+                            <input type="time" placeholder="AM/PM hh:mm" class="clock">
+                            <!-- <select class="select_box clock">
                                 <option>00:00 am</option>
                                 <option>01:00 am</option>
                                 <option selected>10:00 am</option>
-                            </select>
+                            </select> -->
                         </li>
                         <li>
                             <p class="book_list_title">Phone</p>
@@ -244,8 +243,89 @@
         </section>
         <section class="group8">
             <h2 class="hidden">section 8</h2>
-            <img src="images/contents_bg4.png" alt="contents background image">
         </section>
+        <section class="group9">
+            <h2 class="hidden">section 9</h2>
+            <div class="group9_wrapper">
+                <p class="group9_title1">Discover</p>
+                <p class="group9_title2">OUR NEW MENU</p>
+                <ul class="discover_menu">
+                    <li>
+                        <img src="images/new_menu1.png" alt="food">
+                        <div class="discover_menu_box">
+                            <p class="discover_menu_date">Food / 16th March, 2019</p>
+                            <p class="discover_menu_title">Lorem ipsum dolor sit</p>
+                            <p class="discover_menu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                            <span class="read_more">READ MORE</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/new_menu2.png" alt="spices">
+                        <div class="discover_menu_box">
+                            <p class="discover_menu_date">Spices / 16th March, 2019</p>
+                            <p class="discover_menu_title">Lorem ipsum dolor sit</p>
+                            <p class="discover_menu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                            <span class="read_more">READ MORE</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/new_menu3.png" alt="chicken curry">
+                        <div class="discover_menu_box">
+                            <p class="discover_menu_date">Chicken Curry / 16th March, 2019</p>
+                            <p class="discover_menu_title">Lorem ipsum dolor sit</p>
+                            <p class="discover_menu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
+                            <span class="read_more">READ MORE</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <section class="social">
+                <div class="social_wrapper">
+                    <p class="social_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                    <p class="social_name">Linda Steward</p>
+                    <ul class="social_list">
+                        <li><a href="#"><img src="images/facebook.png"></a></li>
+                        <li><a href="#"><img src="images/twitter.png"></a></li>
+                        <li><a href="#"><img src="images/instagram.png"></a></li>
+                        <li><a href="#"><img src="images/pinterest.png"></a></li>
+                        <li><a href="#"><img src="images/google.png"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about_wrapper">
+                    <div class="about_text_box">
+                        <p class="about_title">ABOUT</p>
+                        <p class="about_description">Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
+                    </div>
+                    <ul class="about_list">
+                        <li>
+                            <p class="about_list_title">ABOUT</p>
+                            <p class="about_list_submenu">Team</p>
+                            <p class="about_list_submenu">Join us</p>
+                            <p class="about_list_submenu">Ethic</p>
+                            <p class="about_list_submenu">Goals</p>
+                        </li>
+                        <li>
+                            <p class="about_list_title">ABOUT</p>
+                            <p class="about_list_submenu">Team</p>
+                            <p class="about_list_submenu">Join us</p>
+                            <p class="about_list_submenu">Ethic</p>
+                            <p class="about_list_submenu">Goals</p>
+                        </li>
+                        <li>
+                            <p class="about_list_title">ABOUT</p>
+                            <p class="about_list_submenu">Team</p>
+                            <p class="about_list_submenu">Join us</p>
+                            <p class="about_list_submenu">Ethic</p>
+                            <p class="about_list_submenu">Goals</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
     </div>
     <script src="js/main.js"></script>
 </body>
