@@ -6,6 +6,16 @@
         width: 50%;
     }
 }
+@keyframes mobile_menu_animation{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
 @keyframes highlight_animation{
     0%{
         opacity: 0;
@@ -38,6 +48,16 @@
     }
     100%{
         transform: translate(70%, -50%) rotate(0);
+    }
+}
+@keyframes menu_title_animation{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 110%;   
     }
 }
 @keyframes read_more_animation{

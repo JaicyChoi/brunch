@@ -1,0 +1,64 @@
+@media screen and (max-width:980px){
+    body{
+        font-size: 0.9em;
+    }
+    .header_wrapper, .group1_wrapper, .group2_wrapper, .group3_wrapper,
+    .group5_wrapper, .group7_wrapper, .group9_wrapper, .about_wrapper{
+        width: 97%;
+    }
+
+    .group4_wrapper, .social_wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
+    .social_text{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        font-size: 0.85em;
+    }
+    .logo{
+        margin-top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3em;
+    }
+    .pc_nav{
+        display: none;
+    }
+    .mobile_nav{
+        display: block;
+    }
+    .header_message{
+        margin: 170px 0;   
+    }
+    input[type="time"]::-webkit-calendar-picker-indicator{
+        background-size: 18px 18px;
+        margin-right: 5px;
+    }
+    .select_box, .book_list input, .book_submit{
+        width: 215px;
+    }
+    .discover_menu_date{
+        text-indent: 10px;
+    }
+    .discover_menu_title{
+        text-indent: 10px;
+    }
+    .discover_menu_description{
+        margin-left: 10px;
+    }
+    .read_more{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:680px){
+    
+}
+/*1. resize group6, group8 height
+2. resize group7 input boxes
+3. resize group3 gallery images
+4. resize group9 list lis
+5. resize footer about_text_box*/
