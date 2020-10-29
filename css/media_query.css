@@ -1,3 +1,8 @@
+@media screen and (max-width:1200px){
+    .top_button_wrapper{
+        width: 97%;
+    }
+}
 @media screen and (max-width:980px){
     body{
         font-size: 0.9em;
@@ -60,6 +65,15 @@
     }
     .discover_menu_description, .read_more{
         margin-left: 10px;
+    }
+    .top_button{
+        width: 50px;
+        height: 50px;
+    }
+    .top_button:before{
+        width: 23px;
+        height: 23px;
+        left: 26%;
     }
 }
 @media screen and (max-width:680px){
@@ -266,6 +280,15 @@
         left: 50%;
         transform: translateX(-50%);
         width: 95%;
+    }
+    .top_button{
+        width: 45px;
+        height: 45px;
+    }
+    .top_button:before{
+        width: 21px;
+        height: 21px;
+        left: 25%;
     }
 }
 @media screen and (max-width:320px){

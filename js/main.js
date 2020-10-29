@@ -63,5 +63,19 @@ new_menu.forEach(function(li){
 });
 
 //move top button control
+const header = document.querySelector('header');
 const top_button_wrapper = document.querySelector('.top_button_wrapper');
 const top_button = document.querySelector('.top_button');
+
+window.addEventListener('scroll', function(){
+    let scroll_height = window.pageYOffset;
+
+    if( scroll_height >= document.body.scrollHeight/6.5 )
+        top_button_wrapper.classList.add('show');
+    else if( scroll_height < document.body.scrollHeight/6.5 )
+        top_button_wrapper.classList.remove('show');
+});
+
+top_button.addEventListener('click', function(){
+    header.scrollIntoView({behavior:'smooth'});
+});
