@@ -34,6 +34,14 @@
         transform: translateY(-5px);
     }
 }
+@keyframes dot_animation_480{
+    0%, 100%{
+        top: 5px;
+    }
+    50%{
+        top: -5px;
+    }
+}
 @keyframes rotate_animation_left{
     0%{
         transform: translate(-70%, -50%) rotate(0);
@@ -48,6 +56,22 @@
     }
     100%{
         transform: translate(70%, -50%) rotate(0);
+    }
+}
+@keyframes rotate_animation_left_480{
+    0%{
+        transform: translate(-75%, -50%) rotate(0);
+    }
+    100%{
+        transform: translate(-75%, -50%) rotate(360deg);
+    }
+}
+@keyframes rotate_animation_right_480{
+    0%{
+        transform: translate(75%, -50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(75%, -50%) rotate(0);
     }
 }
 @keyframes menu_title_animation{

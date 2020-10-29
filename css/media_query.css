@@ -2,14 +2,25 @@
     body{
         font-size: 0.9em;
     }
-    .header_wrapper, .group1_wrapper, .group2_wrapper, .group3_wrapper,
+    .group1_wrapper, .group2_wrapper, .group3_wrapper,
     .group5_wrapper, .group7_wrapper, .group9_wrapper, .about_wrapper{
         width: 97%;
     }
-
-    .group4_wrapper, .social_wrapper{
+    .header_wrapper, .group4_wrapper, .social_wrapper{
         width: 100%;
         overflow: hidden;
+    }
+    .logo{
+        left: 16px;
+    }
+    .main_menu{
+        right: 16px;
+    }
+    .new_menu_title.hover:after{
+        bottom: 0;
+    }
+    .group6, .group8{
+        height: 680px;
     }
     .social_text{
         width: 80%;
@@ -34,6 +45,9 @@
     .header_message{
         margin: 170px 0;   
     }
+    .group6, .group8{
+        height: 480px;
+    }
     input[type="time"]::-webkit-calendar-picker-indicator{
         background-size: 18px 18px;
         margin-right: 5px;
@@ -41,24 +55,227 @@
     .select_box, .book_list input, .book_submit{
         width: 215px;
     }
-    .discover_menu_date{
+    .discover_menu_date, .discover_menu_title{
         text-indent: 10px;
     }
-    .discover_menu_title{
-        text-indent: 10px;
-    }
-    .discover_menu_description{
-        margin-left: 10px;
-    }
-    .read_more{
+    .discover_menu_description, .read_more{
         margin-left: 10px;
     }
 }
 @media screen and (max-width:680px){
-    
+    .group1_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .group1_text_box{
+        width: 85%;
+        margin-bottom: 45px;
+    }
+    .group1_img{
+        position: relative;
+        float: left;
+        width: 70%;
+        min-width: 290px;
+        overflow: hidden;
+    }
+    .group3_wrapper{
+        width: 95%;
+    }
+    .gallery_list.first{
+        width: 100%;
+        display: block;
+        flex-direction: row;
+    }
+    .gallery_list.second{
+        min-width: 100%;
+        display: block;
+        flex-direction: row;
+    }
+    .new_menu{
+        width: 49%;
+    }
+    .book_list_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .book_list{
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .book_list li{
+        margin-bottom: 25px;
+    }
+    .book_list li:last-child{
+        margin-bottom: 25px;
+    }
+    .select_box, .book_list input, .book_submit{
+        width: 45%;
+        min-width: 250px;
+    }
+    .discover_menu{;
+        flex-direction: column;
+        align-items: center;
+    }
+    .discover_menu li{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .discover_menu li:last-child{
+        margin-bottom: 0;
+    }
+    .discover_menu img{
+        width: 50%;
+    }
+    .discover_menu_date, .discover_menu_title{
+        text-indent: 15px;
+    }
+    .discover_menu_description, .read_more{
+        margin-left: 15px;
+    }
+    .about_text_box{
+        width: 50%;
+    }
 }
-/*1. resize group6, group8 height
-2. resize group7 input boxes
-3. resize group3 gallery images
-4. resize group9 list lis
-5. resize footer about_text_box*/
+@media screen and (max-width:480px){
+    header{
+        font-size: 0.8em;
+    }
+    .menu_icon_wrapper{
+        width: 45px;
+        height: 40px;
+    }
+    .menu_icon{
+        width: 33px;
+        height: 2px;
+    }
+    .menu_icon:before{
+        transform: translateY(-10px);
+    }
+    .menu_icon:after{
+        transform: translateY(10px);
+    }
+    .mobile_menu{
+        padding: 10px 60px 10px 15px;
+    }
+    .header_message{
+        width: 85%;
+        margin: 100px 0;
+        padding: 75px 0;
+        text-align: center;   
+    }
+    .header_message p:nth-child(3):after{
+        height: 37px;
+    }
+    .group2{
+        padding: 55px 0;
+    }
+    .group2_list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .group2_list li{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .group2_list li:last-child{
+        margin-bottom: 0;
+    }
+    .group2_list li:nth-child(1):before,
+    .group2_list li:nth-child(2):before,
+    .group2_list li:nth-child(3):before{
+        position: relative;
+    }
+    .group2_list li:hover:before{
+        animation: dot_animation_480 1s ease-out infinite;
+    }
+    .group2_list_title{
+        padding-top: 0px;
+        margin: 30px 0 25px;
+    }
+    .group4_wrapper{
+        padding: 60px 0 50px;
+    }
+    .group4_description{
+        width: 85%;
+    }
+    .group4_list li{
+        margin-right: 35px;
+    }
+    .group4_wrapper:before{
+        animation: rotate_animation_left_480 25s linear infinite;
+    }
+    .group4_wrapper:after{
+        animation: rotate_animation_right_480 25s linear infinite;
+    }
+    .group5{
+        padding-top: 150px;
+    }
+    .group5_wrapper_bg{
+        padding: 40px 0 45px;
+    }
+    .menu_menu_wapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .new_menu{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .new_menu:last-child{
+        margin-bottom: 0;
+    }
+    .new_menu li{
+        margin-bottom: 25px;
+    }
+    .new_menu li:before{
+        bottom: 5px;
+        margin-right: 10px;
+    }
+    .group6, .group8{
+        height: 400px;
+    }
+    .group9{
+        padding: 40px 0 80px;
+    }
+    .discover_menu li{
+        width: 97%;
+    }
+    .discover_menu img{
+        width: 45%;
+    }
+    .social_list li{
+        margin-left: 15px;
+    }
+    .about{
+        padding: 60px 0 60px;
+    }
+    .about_text_box{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .about_list{
+        float: left;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+    }
+}
+@media screen and (max-width:320px){
+    .new_menu{
+        width: 90%;
+    }
+    .group6, .group8{
+        height: 320px;
+    }
+    .social_list li{
+        margin-left: 10px;
+    }
+}
