@@ -159,6 +159,10 @@
     header{
         font-size: 0.8em;
     }
+    .logo{
+        margin-top: 3px;
+        font-size: 3.5em;
+    }
     .menu_icon_wrapper{
         width: 45px;
         height: 40px;
