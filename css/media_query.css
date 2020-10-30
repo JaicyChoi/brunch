@@ -53,7 +53,7 @@
     .group6, .group8{
         height: 480px;
     }
-    input[type="time"]::-webkit-calendar-picker-indicator{
+    .clock::-webkit-calendar-picker-indicator{
         background-size: 18px 18px;
         margin-right: 5px;
     }
