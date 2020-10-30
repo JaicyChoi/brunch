@@ -70,10 +70,14 @@ const top_button = document.querySelector('.top_button');
 window.addEventListener('scroll', function(){
     let scroll_height = window.pageYOffset;
 
-    if( scroll_height >= document.body.scrollHeight/6.5 )
+    if( scroll_height >= document.body.scrollHeight/6.5 ){
         top_button_wrapper.classList.add('show');
-    else if( scroll_height < document.body.scrollHeight/6.5 )
+        top_button.classList.add('show');
+    }
+    else if( scroll_height < document.body.scrollHeight/6.5 ){
         top_button_wrapper.classList.remove('show');
+        top_button.classList.remove('show');
+    }
 });
 
 top_button.addEventListener('click', function(){
