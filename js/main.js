@@ -83,5 +83,3 @@ window.addEventListener('scroll', function(){
 top_button.addEventListener('click', function(){
     header.scrollIntoView({behavior:'smooth'});
 });
-
-//Fix the problem that group7 input box icons are not visible
