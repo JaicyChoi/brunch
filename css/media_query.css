@@ -11,7 +11,7 @@
     .group5_wrapper, .group7_wrapper, .group9_wrapper, .about_wrapper{
         width: 97%;
     }
-    .header_wrapper, .group4_wrapper, .social_wrapper{
+    .header_wrapper, .group4_wrapper, .social_wrapper, .css_validator{
         width: 100%;
         overflow: hidden;
     }
