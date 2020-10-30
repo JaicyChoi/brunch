@@ -688,22 +688,20 @@ header{
     height: 32px;
     color: white;
     text-indent: 5px;
-}
-.select-selected{
-  background-color: #2a3b40;
-}
-.select_box{
-    appearance: none;
+     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;    
     background: url(../images/select_arrow.png) no-repeat 96%;
     background-size: 13px 10px;
 }
+.select-selected{
+  background-color: #2a3b40;
+}
 .clock::-webkit-calendar-picker-indicator{
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;   
-    background: url(../images/clock.png) no-repeat;
+    background: url(../images/clock.png) no-repeat 96%;
     background-size: 20px 20px;
     margin-right: 5px;
 }
@@ -736,7 +734,7 @@ option{
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;   
-    background: url(../images/calendar.png) no-repeat;
+    background: url(../images/calendar.png) no-repeat 96%;
     background-size: 20px 18px;
     margin-right: 5px;
 }
