@@ -9,8 +9,8 @@ body{
     color: #2a3b40;
 }
 .hidden{
-    width: 1;
-    height: 1;
+    width: 1px;
+    height: 1px;
     position: absolute;
     font-size: 0;
     line-height: 0;
@@ -758,7 +758,7 @@ input:-ms-input-placeholder{
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     background-color: white;
-    border: 2px solid white;
+    border: 2px solid transparent;
     border-radius: 7px;
     box-sizing: border-box;
     width: 240px;
@@ -768,6 +768,7 @@ input:-ms-input-placeholder{
     transition: all .3s ease;
 }
 .book_submit:hover{
+    border: 2px solid white;
     background-color: #2a3b40;
     color: white;
 }
